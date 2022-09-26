@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        C - if statement
+    </title>
+    <style>
+        * {
+            font-family: "dangrek", cursive;
+        }
+
+        .syn {
+            width: fit-content;
+            border: 15px solid lightgoldenrodyellow;
+            padding: 50px;
+            margin: 20px;
+        }
+
+        .exm {
+            width: auto;
+            border: 5px solid lightgoldenrodyellow;
+            padding: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>
+            C - if statement 
+        </h2>
+    </header>
+    <p>
+        An if statement consists of a Boolean expression followed by one or more statements.
+        <br>
+        <h2><b>Syntax</b></h2>
+        The syntax of an 'if' statement in C programming language is −
+        <br>
+        <div class="syn">
+            if(boolean_expression) {<br>
+            /* statement(s) will execute if the boolean expression is true */<br>
+            }<br>
+
+        </div>
+        <br>
+        If the Boolean expression evaluates to true, then the block of code inside the 'if' statement will be executed.
+        If the Boolean expression evaluates to false, then the first set of code after the end of the 'if' statement
+        (after the closing curly brace) will be executed.
+        <br><br>
+        C programming language assumes any non-zero and non-null values as true and if it is either zero or null, then
+        it is assumed as false value. <br>
+        <h2><b>Flow Diagram</b></h2>
+        <img src="if_statement.jpg" alt="if_statement">
+        <br>
+        <br>
+        <h2><b>Example</b></h2>
+        <div class="exm">
+            <br>
+            <br>
+            int main () {<br>
+            <br>
+            /* local variable definition */<br>
+            int a = 10;<br>
+            <br>
+            /* check the boolean condition using if statement */
+            <br>
+            if( a < 20 ) {<br>
+                <br> /* if condition is true then print the following */
+                printf("a is less than 20\n" );<br>
+                }<br>
+                <br>
+                printf("value of a is : %d\n", a);<br>
+                <br>
+                return 0;<br>
+                }<br>
+        </div>
+        When the above code is compiled and executed, it produces the following result − <br>
+        <div class="exm">
+            a is less than 20; <br>
+            value of a is : 10 <br>
+        </div>
+    </p>
+</body>
+
+</html>

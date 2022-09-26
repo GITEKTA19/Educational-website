@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        C - switch statement
+    </title>
+    <style>
+        *{
+            font-family: "dangrek", cursive;
+        }
+        .syn{
+            width: fit-content;
+            border: 15px solid lightgoldenrodyellow;
+            padding: 50px;
+            margin: 20px;
+        }
+        .exm{
+            width: auto;
+            border: 5px solid lightgoldenrodyellow;
+            padding: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+   
+        <header>
+            <h2>
+                C - switch statement
+            </h2>
+        </header>
+        <p>
+            A switch statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each switch case.
+            <br>
+          <h2><b>  Syntax</b></h2>
+The syntax for a switch statement in C programming language is as follows −
+<br>      
+<div class="syn">
+<br>
+            switch(expression) {<br>
+<br>
+                case constant-expression  :<br>
+                   statement(s);<br>
+                   break; /* optional */<br>
+                 <br>
+                case constant-expression  :<br>
+                   statement(s);<br>
+                   break; /* optional */<br>
+               <br>
+                /* you can have any number of case statements */<br>
+                default : /* Optional */<br>
+                statement(s);<br>
+             }<br>
+        </div>
+        <ul>
+            The following rules apply to a switch statement − <br>
+            <li>The expression used in a switch statement must have an integral or enumerated type, or be of a class type in which the class has a single conversion function to an integral or enumerated type.</li>
+            <li>You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon.</li>
+            <li>The constant-expression for a case must be the same data type as the variable in the switch, and it must be a constant or a literal.</li>
+            <li>When the variable being switched on is equal to a case, the statements following that case will execute until a break statement is reached.</li>
+            <li>When a break statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.</li>
+            <li>Not every case needs to contain a break. If no break appears, the flow of control will fall through to subsequent cases until a break is reached.</li>
+            <li>A switch statement can have an optional default case, which must appear at the end of the switch. The default case can be used for performing a task when none of the cases is true. No break is needed in the default case.</li>
+        </ul>
+        <h2><b>Flow Diagram</b></h2>
+        <img src="switch_statement.jpg" alt="switch_statement">
+        <br>
+        <br>
+        <h2><b>Example</b></h2>
+        <div class="exm">
+            #include <stdio.h><br>
+ <br>
+                int main () {<br>
+                <br>
+                   /* local variable definition */<br>
+                   char grade = 'B';<br>
+                <br>
+                   switch(grade) {<br>
+                      case 'A' :<br>
+                         printf("Excellent!\n" );<br>
+                         break;<br>
+                      case 'B' :<br>
+                      case 'C' :
+                         printf("Well done\n" );
+                         break;<br>
+                      case 'D' :<br>
+                         printf("You passed\n" )<br>
+                         break;<br>
+                      case 'F' :<br>
+                         printf("Better try again\n" );<br>
+                         break;<br>
+                      default :<br>
+                         printf("Invalid grade\n"<br>
+                   }<br>
+                   <br>
+                   printf("Your grade is  %c\n", grade );<br>
+                 <br>
+                   return 0;<br>
+                }<br>
+        </div>
+        When the above code is compiled and executed, it produces the following result − <br>
+        <div class="exm">
+            Well done <br>
+Your grade is B <br>
+
+        </div>
+    </p>
+</body>
+
+</html>

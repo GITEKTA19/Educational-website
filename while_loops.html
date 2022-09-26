@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            WHILE LOOP
+        </title>
+        <style>
+            *{
+                font-family: "dangrek", cursive;
+            }
+            .syn{
+                width: fit-content;
+                border: 15px solid lightgoldenrodyellow;
+                padding: 50px;
+                margin: 20px;
+            }
+            .exm{
+                width: auto;
+                border: 5px solid lightgoldenrodyellow;
+                padding: 5px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header><b>WHILE LOOP</b></header>
+        <p>
+            A while loop in C programming repeatedly executes a target statement as long as a given condition is true. <br>
+            <h2><b>Syntax</b></h2>
+<br>The syntax of a while loop in C programming language is −
+<p class="syn">
+while(condition) { <br>
+   statement(s); <br>
+} <br>
+</p>
+
+Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any nonzero value. The loop iterates while the condition is true.
+<br>
+When the condition becomes false, the program control passes to the line immediately following the loop.
+<br>
+<h2><b>Flow Diagram</b></h2>
+<img src="_while_loop.jpg" alt="while_loop" height="500px" width="500px">
+<br> <br>
+Here, the key point to note is that a while loop might not execute at all. When the condition is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed.
+
+<b>Example</b>
+<div class="exm">
+    #include <stdio.h><br>
+ <br>
+        int main () {<br>
+        <br>
+           /* local variable definition */<br>
+           int a = 10;<br>
+        <br>
+           /* while loop execution */<br>
+           while( a < 20 ) {<br>
+              printf("value of a: %d\n", a);<br>
+              a++;<br>
+           }<br>
+         <br>
+           return 0;<br>
+        }<br>
+</div>
+<br>
+When the above code is compiled and executed, it produces the following result −
+<div class="exm">
+value of a: 10<br>
+value of a: 11<br>
+value of a: 12<br>
+value of a: 13<br>
+value of a: 14<br>
+value of a: 15<br>
+value of a: 16<br>
+value of a: 17<br>
+value of a: 18<br>
+value of a: 19<br>
+</div>
+        </p>
+    </body>
+</html>

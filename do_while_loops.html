@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        do...while loop in C
+    </title>
+    <style>
+        *{
+            font-family: "dangrek", cursive;
+        }
+        .syn{
+            width: fit-content;
+            border: 15px solid lightgoldenrodyellow;
+            padding: 50px;
+            margin: 20px;
+        }
+        .exm{
+            width: auto;
+            border: 5px solid lightgoldenrodyellow;
+            padding: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+        <header>
+            <h1>
+                do...while loop in C
+            </h1>
+        </header>
+    <p>    
+        Unlike for and while loops, which test the loop condition at the top of the loop, the do...while loop in C programming checks its condition at the bottom of the loop.
+<br>
+A do...while loop is similar to a while loop, except the fact that it is guaranteed to execute at least one time.
+
+<h2><b>Syntax</b></h2>
+The syntax of a do...while loop in C programming language is −
+    <div class="syn">
+        do {<br>
+            statement(s);<br>
+         } while( condition );<br>
+    </div>
+    Notice that the conditional expression appears at the end of the loop, so the statement(s) in the loop executes once before the condition is tested.
+<br>
+If the condition is true, the flow of control jumps back up to do, and the statement(s) in the loop executes again. This process repeats until the given condition becomes false.
+<br>
+<h2><b>Flow Diagram</b></h2>
+<img src="_do_while_loop.jpg" alt="_do_while_loop">
+        <div class="exm">
+            #include <stdio.h><br>
+ <br>
+                int main () {<br>
+                <br>
+                   /* local variable definition */<br>
+                   int a = 10;<br>
+                <br>
+                   /* do loop execution */<br>
+                   do {<br>
+                      printf("value of a: %d\n", a);<br>
+                      a = a + 1;<br>
+                   }while( a < 20 );<br>
+                 <br>
+                   return 0;<br>
+                }<br>
+        </div>
+        When the above code is compiled and executed, it produces the following result − <br>
+        <div class="exm">
+            value of a: 10<br>
+value of a: 11<br>
+value of a: 12<br>
+value of a: 13<br>
+value of a: 14<br>
+value of a: 15<br>
+value of a: 16<br>
+value of a: 17<br>
+value of a: 18<br>
+value of a: 19<br>
+        </div>
+    </p>
+</body>

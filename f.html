@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                FOR LOOP
+        </title>
+        <style>
+            *{
+                font-family: "dangrek", cursive;
+            }
+            .syn{
+                width: fit-content;
+                border: 15px solid lightgoldenrodyellow;
+                padding: 50px;
+                margin: 20px;
+            }
+            .exm{
+                width: auto;
+                border: 5px solid lightgoldenrodyellow;
+                padding: 5px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> FOR LOOP</h1>
+        </header>
+        <p>        <h2>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.</h2>
+        <h2><b>Syntax</b></h2>
+        The syntax of a for loop in C programming language is −
+<p class="syn">
+for ( int; condition; increment ) { <br>
+   statement(s); <br>
+} <br>
+</p> 
+Here is the flow of control in a 'for' loop −
+<ul>
+<li> int step is executed first, and only once. This step allows you to declare and initialize any loop control variables. You are not required to put a statement here, as long as a semicolon appears.</li>
+
+<li>Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and the flow of control jumps to the next statement just after the 'for' loop.</li>
+
+<li>After the body of the 'for' loop executes, the flow of control jumps back up to the increment statement. This statement allows you to update any loop control variables. This statement can be left blank, as long as a semicolon appears after the condition.</li>
+<li>The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop, then increment step, and then again condition). After the condition becomes false, the 'for' loop terminates.</li>
+
+</ul>
+<h2><b>Flow Diagram</b></h2>
+<img src="_for_loop.jpg" alt="_for_loop" width="500px" height="500px">
+     
+<h2><b>Example</b></h2>
+<p class="exm">
+    #include <stdio.h>
+ <br>
+        int main () {
+       <br> 
+           int a;
+           <br> 
+           /* for loop execution */ <br>
+           for( a = 10; a < 20; a = a + 1 ){<br>
+              printf("value of a: %d\n", a);<br>
+           } <br>
+         <br>
+           return 0;<br>
+        } <br>
+</p>
+When the above code is compiled and executed, it produces the following result −
+<p class="exm">
+value of a: 10 <br>
+value of a: 11 <br>
+value of a: 12 <br>
+value of a: 13 <br>
+value of a: 14 <br>
+value of a: 15 <br>
+value of a: 16 <br>
+value of a: 17 <br>
+value of a: 18 <br>
+value of a: 19 <br>
+</p>
+</p>
+
+    </body>
+</html>

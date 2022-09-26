@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a2 ol{
+                border: 5px solid black;
+                padding: 0.5em;
+                
+        }
+        li{
+                border: 1px solid goldenrod;
+                padding: 0.5em;
+                width: fit-content;
+                padding-top: 3px;
+                margin-top: 8px;
+        }
+        li ::before{
+            position: absolute;
+            content: '';
+            background-color: greenyellow;
+            border-left: 1px solid black;
+            width: 20px;
+            height: 20px;
+            top: 0px;
+            left: 50%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".q").click(function(){
+        $(".q").toggleClass("blue");
+      });
+    });
+    $(document).ready(function(){
+      $(".w").click(function(){
+        $(".q ,.w").toggleClass("blue");
+      });
+    });
+    $(document).ready(function(){
+      $(".e").click(function(){
+        $(".q ,.w, .e").toggleClass("blue");
+      });
+    });
+    $(document).ready(function(){
+      $(".r").click(function(){
+        $(".q ,.w, .e ,.r").toggleClass("blue");
+      });
+    });
+    $(document).ready(function(){
+      $(".t").click(function(){
+        $(".q ,.w, .e ,.r, .t").toggleClass("blue");
+      });
+    });
+    </script>
+    <style>
+    .blue {
+      color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1><center>  This is flowchat of two number's sum</center></h1>
+    <center>
+    <div class="a" id="container">
+        <div class="a2">
+			
+            <ol>
+                <li class="q">Start</a></li>
+            
+        
+                <li class="w">Input Number1, Number2</a></li>
+         
+                <li class="e">Sum= Number1+ Number2</a></li>
+            
+          
+                <li class="r">Print Sum</a></li>
+           
+           
+                <li class="t">End</li>
+            </ol>
+
+
+        </div>
+    </div>
+
+    </center>
+</body>
+</html>

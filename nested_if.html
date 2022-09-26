@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        C - nested if statements
+    </title>
+    <style>
+        *{
+            font-family: "dangrek", cursive;
+        }
+        .syn{
+            width: fit-content;
+            border: 15px solid lightgoldenrodyellow;
+            padding: 50px;
+            margin: 20px;
+        }
+        .exm{
+            width: auto;
+            border: 5px solid lightgoldenrodyellow;
+            padding: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+   
+        <header>
+            <h2>
+                C - nested if statements
+            </h2>
+        </header>
+        <p>
+
+
+<br>
+It is always legal in C programming to nest if-else statements, which means you can use one if or else if statement inside another if or else if statement(s).
+<br>
+<h2><b>Syntax</b></h2>
+The syntax for a nested if statement is as follows −
+<br>
+        <div class="syn">
+            <br>if( boolean_expression 1) {
+<br>
+                <br>/* Executes when the boolean expression 1 is true */
+                <br>if(boolean_expression 2) {
+                <br>   /* Executes when the boolean expression 2 is true */
+               <br> }
+            <br> }
+<br>
+        </div>
+        You can nest else if...else in the similar way as you have nested if statements.
+<br>
+        <h2><b>Flow Chart</b></h2>
+        <img src="NestedIfC.jpeg" alt="nested if">
+        <br>
+        <br>
+        <h2><b>Example</b></h2>
+        <div class="exm">
+           <br> #include <stdio.h>
+ <br>
+                <br>int main () {
+                <br>
+                 <br>  /* local variable definition */
+                  <br> int a = 100;
+                  <br> int b = 200;
+                 <br>
+                <br>   /* check the boolean condition */
+                 <br>  if( a == 100 ) {
+                  <br> 
+                    <br>  /* if condition is true then check the following */
+                    <br>  if( b == 200 ) {
+                    <br>     /* if condition is true then print the following */
+                     <br>    printf("Value of a is 100 and b is 200\n" );
+                    <br>  }
+                  <br> }
+                   <br>
+                  <br> printf("Exact value of a is : %d\n", a );
+                  <br> printf("Exact value of b is : %d\n", b );
+                 <br>
+                  <br> return 0;
+               <br> }
+        </div>
+<br>
+When the above code is compiled and executed, it produces the following result −
+<br>
+        <div class="exm">
+          <br>  Value of a is 100 and b is 200
+            <br>Exact value of a is : 100
+           <br> Exact value of b is : 200
+        </div>
+    </p>
+</body>
+
+</html>

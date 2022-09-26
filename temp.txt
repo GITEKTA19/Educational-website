@@ -1,0 +1,146 @@
+temp:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+****************************************************************
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+class student
+{
+	int a,b;
+public:
+	void input();
+	void display();
+	student operator +(student a1)
+	{
+		a=a+a1.a;
+		b=b+a1.b;
+		return *this;
+	}
+};
+void student::input()
+{
+	cout<<"entre the a:";
+	cin>>a;
+	cout<<"enter theb:";
+	cin>>b;
+}
+void student::display()
+{
+	cout<<"a is:"<<a;
+	cout<<"b is:"<<b;
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	student s1,s2,s3;
+	s1.input();
+	s2.input();
+	s3=s1+s2;
+	s3.display();
+	return 0;
+}
+
+output:
+entre the a:10
+enter theb:20
+entre the a:20
+enter theb:10
+a is:30b is:30
+
+
+************************************************************************************************************
+// 8.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+class matrix
+{
+	int element[3][3];
+public:
+	matrix()
+	{};
+	matrix(int tempmatrix[3][3])
+	{
+		for(int i=0;i<3;i++)
+			for(int j=0;j<3;j++)
+				element[i][j]=tempmatrix[i][j];
+	}
+	void read()
+	{
+		for(int i=0;i<3;i++)
+			for(int j=0;j<3;j++)
+				cin>>element[i][j];
+	}
+	void operator -()
+	{
+		for(int i=0;i<3;i++)
+			for(int j=0;j<3;j++)
+				element[i][j]=-element[i][j];
+	}
+	void display()
+	{
+		for(int i=0;i<3;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				cout<<element[i][j]<<" ";
+			}
+			cout<<"\n";
+		}
+	}
+};
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	matrix m ,m2;
+	cout<<"enter the 9 value:";
+	m.read();
+	cout<<"entered value are:";
+	m.display();
+		cout<<"entered value are:";
+	-m;
+		m.display();
+		cout<<"enter the second 9 value";
+		m2.read();
+		cout<<"enter value are:";
+		m2.display();
+		cout<<"enetr";
+		-m2;
+		m2.display();
+
+	return 0;
+}
+
+output:
+enter the 9 value:1
+2
+3
+4
+5
+6
+7
+8
+9
+entered value are:1 2 3
+4 5 6
+7 8 9
+entered value are:-1 -2 -3
+-4 -5 -6
+-7 -8 -9
+enter the second 9 value10
+11
+12
+13
+14
+15
+16
+17
+18
+enter value are:10 11 12
+13 14 15
+16 17 18
+enetr-10 -11 -12
+-13 -14 -15
+-16 -17 -18
+
